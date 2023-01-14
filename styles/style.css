@@ -28,17 +28,18 @@ ul, ol{
     margin: 0 auto;
 
 }
+.feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px; 
+}
 .busniess-moto, .feat-description, .feat-blog-description, .blog-description, .fact-description, .sponsor-love-description, .projects-description{
     font-weight: 400;
     font-size: var(--primary-font-size);
     line-height: 26px;
     color: var(--primary-color);
 }
-.feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 53px; 
-}
+
 /* Header Part  Start  */
 #header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -306,12 +307,13 @@ ul, ol{
 .sopnsor-text{
     text-align: center;
 }
-.sopnsor-logo{
-    display: flex;
-    column-gap: 155px;
+.sponsor-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
     padding-top: 50px;
 }
-.sopnsor-logo img{
+.sponsor-logo img{
     filter:  grayscale(100%);
 }
 
@@ -333,6 +335,142 @@ Footer Part Style
     text-align: center;
     color: #424242;
  
+}
+
+
+/*---------------------
+ Media Query CSS Part 
+ ---------------------- */
+
+ /* Responsive for Mobile Device  */
+ @media only screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    .feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 45px; 
+    }
+    #header {
+        display: none;
+    }
+    .break-no{
+        display: none;
+    }
+    .head-line {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        color: var(--secondary-color);
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .feature-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 73px;
+        margin-left: 0px;
+    }
+   
+
+    .feat-img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        place-items: center;
+
+    }
+    .feat-img img{
+        width: 95%;
+    }
+    .feat-text{
+        text-align: center;
+    }
+    .feat-title{
+        padding-right: 0;
+        padding-top: 20px;
+    }
+  
+    #feature-blog {
+        padding-top: 0px;
+    }
+    .feat-blog-body {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+    }
+    .feat-blog-title {
+        padding-right: 0px;
+    }
+    .feat-blog-description {
+        padding-bottom: 20px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .blogs{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .blog {
+        padding: 30px 20px 30px 20px;
+    }
+    .feat-blog-img{
+        text-align: center;
+    }
+    .feat-blog-img img{
+        width: 95%;
+    }
+    .big-btn {
+    
+        width: 276px;
+        height: 165px;
+        bottom: -10%;
+        left: 7%;
+    }
+    .big-btn a {
+        font-size: 40px;
+    }
+    .big-btn a .span{
+        font-size: 20px;
+    }
+    #fact-part {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .fact-text {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .fact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    #project-part {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        padding-top: 30px;
+        gap: 30px;
+    }
+    #sponsor-part {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+    .sponsor-logo {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        place-items: center;
+        gap: 20px;
+    }
 }
 
 
