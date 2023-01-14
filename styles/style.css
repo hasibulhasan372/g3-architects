@@ -28,6 +28,17 @@ ul, ol{
     margin: 0 auto;
 
 }
+.busniess-moto, .feat-description, .feat-blog-description, .blog-description, .fact-description, .sponsor-love-description, .projects-description{
+    font-weight: 400;
+    font-size: var(--primary-font-size);
+    line-height: 26px;
+    color: var(--primary-color);
+}
+.feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px; 
+}
 /* Header Part  Start  */
 #header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -79,12 +90,7 @@ ul, ol{
     color: var(--secondary-color);
    
 }
-.busniess-moto, .feat-description, .feat-blog-description, .blog-description, .fact-description, .sponsor-love-description{
-    font-weight: 400;
-    font-size: var(--primary-font-size);
-    line-height: 26px;
-    color: var(--primary-color);
-}
+
 .explore-more{
     padding: 21px 24px 20px 25px;
     background-color: #FF900E;
@@ -119,11 +125,7 @@ ul, ol{
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.feat-title, .feat-blog-title, .fact-title, .sponsor-title{
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 53px; 
-}
+
 .feat-title{
     color: var(--secodary-color);
     padding-right: 100px;
@@ -167,7 +169,7 @@ ul, ol{
     padding: 30px 42px 30px 30px;
     margin-bottom: 20px;
 }
-.blog-title, .box-title{
+.blog-title, .box-title, .project-name{
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -244,6 +246,41 @@ ul, ol{
     padding-bottom: 5px;
 }
 /* Fact Style Part End  */
+/* Our Projects Style Part Start  */
+#work-part{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.projects-header{
+    text-align: center;
+}
+.projects-title{
+    padding-bottom: 24px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    padding-top: 70px;
+}
+.project{
+    border-radius: 8px;
+    padding: 20px  15px 30px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.house-details{
+    display: flex;
+    justify-content: space-between;
+}
+.project-name{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.fa-star.filled{
+  color: #FF900E;
+
+}
+/* Our Projects Style Part End   */
 /* Sponsor Part Start  */
 #sponsor-part{
     padding-top: 90px;
@@ -281,6 +318,10 @@ Footer Part Style
     line-height: 23px;
     text-align: center;
     color: #424242;
+ 
 }
+
+
+
 
 
