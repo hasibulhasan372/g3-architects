@@ -233,10 +233,21 @@ ul, ol{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* transform: rotate(90deg); */
+    transition: transform .5s ease-in-out ;
+}
+.award-winning:hover{
+    transform: rotate(30deg) scale(105%) translate(5%, 10px);
+}
+.award-winning:hover .number{
+    font-size: 30px;
+}
+.award-winning:hover .box-title{
+    font-size: 16px;
+    color: #FF900E;
 }
 .box-title{
     color: var(--primary-color);
+    transition: color .5s ease-in-out, font-size .5s ease-in-out;
 }
 .number{
     font-weight: 600;
@@ -244,6 +255,7 @@ ul, ol{
     line-height: 53px;
     padding-top: 10px;
     padding-bottom: 5px;
+    transition: font-size .5s ease-in-out;
 }
 /* Fact Style Part End  */
 /* Our Projects Style Part Start  */
