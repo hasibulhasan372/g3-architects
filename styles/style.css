@@ -278,7 +278,9 @@ ul, ol{
 }
 .fa-star.filled{
   color: #FF900E;
-
+}
+.fa-star.empty{
+    color: gray;
 }
 /* Our Projects Style Part End   */
 /* Sponsor Part Start  */
