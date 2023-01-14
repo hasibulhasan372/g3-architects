@@ -245,8 +245,42 @@ ul, ol{
 }
 /* Fact Style Part End  */
 /* Sponsor Part Start  */
+#sponsor-part{
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+.sponsor-title{
+    padding-bottom: 24px;
+}
+.sopnsor-text{
+    text-align: center;
+}
+.sopnsor-logo{
+    display: flex;
+    column-gap: 155px;
+    padding-top: 50px;
+}
+.sopnsor-logo img{
+    filter:  grayscale(100%);
+}
 
 /* Sponsor Part End  */
 /* Main Style Part End   */
+
+/* --------------------------
+Footer Part Style
+-----------------------------  */
+.footer{
+  padding-top: 39px ;
+  padding-bottom: 38px;
+  background-color:#FFF4E7;
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
 
 
