@@ -1,0 +1,252 @@
+/*----------------------
+ Common CSS start 
+  ---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style-type: none;
+}
+:root{
+    --primary-color: #727272;
+    --secodary-color:  #131313;
+    --tretiary-color: #FF900E;
+    --primary-font-size:1rem;
+    --secondary-font-size:2.81rem;
+    --tertiary-font-size:1.25rem;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+
+}
+/* Header Part  Start  */
+#header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding-top: 50px;
+
+  
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    gap: 80px;
+}
+.logo-name{
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--secondary-color);
+    line-height: 53px;
+}
+.nav-link a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;
+    text-transform: capitalize;
+}
+/* Header Part  End  */
+
+/* Main Style Part Start   */
+/* Banner Part Start  */
+#banner-part{
+    padding-top: 100px;
+    padding-bottom: 45px;
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+.banner-body{
+    text-align: center;
+}
+.banner-text{
+    padding-bottom: 32px;
+}
+.head-line{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--secondary-color);
+   
+}
+.busniess-moto, .feat-description, .feat-blog-description, .blog-description, .fact-description, .sponsor-love-description{
+    font-weight: 400;
+    font-size: var(--primary-font-size);
+    line-height: 26px;
+    color: var(--primary-color);
+}
+.explore-more{
+    padding: 21px 24px 20px 25px;
+    background-color: #FF900E;
+    border-radius: 8px ;
+    border: none;
+}
+.explore-more a{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.banner-img{
+    margin-top: 50px;
+}
+/* Banner Part End  */
+
+/* Featuer Part Start  */
+#feature-part{
+    padding-top: 85px;
+    padding-bottom: 75px;
+}
+.feature-body{
+    display: flex;
+    align-items: center;
+    column-gap: 73px;
+    margin-left: 60px;
+}
+.feat-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feat-title, .feat-blog-title, .fact-title, .sponsor-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px; 
+}
+.feat-title{
+    color: var(--secodary-color);
+    padding-right: 100px;
+}
+.list-text{
+    color: var(--primary-color);
+}
+.feat-dif-color{
+    color: var(--tretiary-color);
+}
+.feat-description{
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+/* Featuer Part End  */
+/* Feature Blog Title Style Part Start  */
+#feature-blog{
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+.feat-blog-body{
+    display: flex;
+    column-gap: 146px;
+
+}
+.feat-blog-title{
+    padding-right: 81px;
+    padding-left: 21px;
+    border-left: 5px solid #FF900E;
+}
+
+.feat-blog-description{
+    padding-top: 24px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+}
+.blog{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px; 
+    border: none;
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 20px;
+}
+.blog-title, .box-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.blog-title{
+    color: var(--secodary-color);
+}
+.blog-description{
+    padding-top: 10px;
+}
+
+.feat-blog-img{
+    position: relative;
+}
+
+.big-btn{
+    background-color: #FF900E;
+    width: 342px;
+    height: 200px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -4%;
+    left: -12%;
+}
+.big-btn a{
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.big-btn a span{
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+/* Feature Blog Title Style Part end  */
+/* Fact Style Part Start  */
+#fact-part{
+    padding-top: 68px;
+    padding-bottom: 90px;
+}
+.fact-text{
+    padding-bottom: 100px;
+}
+.fact-description{
+    padding-top: 24px;
+}
+.fact-box{
+    display: flex;
+    justify-content: space-around;
+}
+.award-winning{
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotate(90deg); */
+}
+.box-title{
+    color: var(--primary-color);
+}
+.number{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+/* Fact Style Part End  */
+/* Sponsor Part Start  */
+
+/* Sponsor Part End  */
+/* Main Style Part End   */
+
+
