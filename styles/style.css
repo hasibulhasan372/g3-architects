@@ -51,17 +51,18 @@ ul, ol{
     display: flex;
     justify-content: space-between;
 }
-.nav-items{
-    display: flex;
-    gap: 80px;
-}
+
 .logo-name{
     font-weight: 700;
     font-size: 45px;
     color: var(--secondary-color);
     line-height: 53px;
 }
-.nav-link a{
+.nav-items{
+    display: flex;
+    gap: 80px;
+}
+.nav-link{
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
