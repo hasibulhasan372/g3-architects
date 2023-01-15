@@ -376,6 +376,7 @@ Footer Part Style
     .container{
         width: 100%;
     }
+    /* Header Part  */
     #header{
         padding-top: 20px;
         padding-bottom: 15px;
@@ -497,7 +498,6 @@ Footer Part Style
     .feat-blog-description {
         padding-bottom: 20px;
         padding-right: 0px;
-        text-align: center;
     }
     .blogs{
         margin-left: 10px;
