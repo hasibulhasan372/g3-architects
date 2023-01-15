@@ -58,6 +58,16 @@ ul, ol{
     color: var(--secondary-color);
     line-height: 53px;
 }
+input{
+    display: none;
+}
+#toggle-bar{
+    display: none;
+}
+#toggle-bar i{
+    color: var(--primary-color);
+    font-size: 30px;
+}
 .nav-items{
     display: flex;
     gap: 80px;
@@ -357,16 +367,72 @@ Footer Part Style
     .container{
         width: 100%;
     }
+    #header{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo-name {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--secondary-color);
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    
+   
+    #toggle-bar{
+        display: block;
+        text-align: right;
+        margin-right: 15px;
+    }
+    #toggle-bar i{
+        color: var(--primary-color);
+        font-size: 30px;
+    }
+    .nav-items {
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        width: 100%;
+        top: 57px;
+        left: 0%;
+        transform: translate(100%, 0%);
+        transition: .5s ;
+        background-color: #504d4c;
+        height: 250px;
+    }
+    .nav-link{
+       color: rgb(145, 128, 128);
+       transition: color .5s ease-in-out;
+    }
+    .nav-link:hover{
+        color: #FF900E;
+    }
+    .nav-items-overly{
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    input:checked ~ header .nav-items{
+        transform: translateY(0);
+    }
+    
+    .break-no{
+        display: none;
+    }
     .feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
         font-weight: 500;
         font-size: 36px;
         line-height: 45px; 
-    }
-    #header {
-        display: none;
-    }
-    .break-no{
-        display: none;
     }
     .head-line {
         font-weight: 700;
@@ -484,6 +550,10 @@ Footer Part Style
         place-items: center;
         gap: 20px;
     }
+    .footer-text {
+        font-size: 16px;
+    }
+  
 }
 
 
