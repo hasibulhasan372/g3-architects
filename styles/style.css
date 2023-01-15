@@ -371,10 +371,15 @@ Footer Part Style
  Media Query CSS Part 
  ---------------------- */
 
- /* Responsive for Mobile Device  */
+ /* Responsive for Small Device  */
  @media only screen and (max-width: 576px) {
     .container{
         width: 100%;
+    }
+    .feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 45px; 
     }
     /* Header Part  */
     #header{
@@ -436,26 +441,33 @@ Footer Part Style
         transform: translateY(0);
     }
     
-    .break-no{
-        display: none;
-    }
-    .feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 45px; 
-    }
+    /* Home Part  */
+    
     .head-line {
         font-weight: 700;
         font-size: 36px;
         line-height: 52px;
         color: var(--secondary-color);
     }
+    
+    .break-no{
+        display: none;
+    }
     .banner-img img{
         width: 100%;
     }
+    /* Feature Part  */
     #feature-part {
         padding-top: 30px;
 
+    }
+    .feat-text{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .feat-title{
+        padding-right: 0;
+        padding-top: 20px;
     }
     .feature-body {
         display: flex;
@@ -475,15 +487,8 @@ Footer Part Style
     .feat-img img{
         width: 95%;
     }
-    .feat-text{
-        text-align: center;
-        padding-bottom: 30px;
-    }
-    .feat-title{
-        padding-right: 0;
-        padding-top: 20px;
-    }
-  
+   
+    /* Feature BLog  */
     #feature-blog {
         padding-top: 0px;
     }
@@ -529,6 +534,8 @@ Footer Part Style
     .big-btn a .span{
         font-size: 20px;
     }
+
+    /* Fact Part  */
     #fact-part {
         padding-top: 15px;
         padding-bottom: 0px;
@@ -543,6 +550,7 @@ Footer Part Style
         align-items: center;
         gap: 30px;
     }
+    /* Projecet Part  */
     #project-part {
         padding-top: 30px;
         padding-bottom: 0px;
@@ -557,6 +565,7 @@ Footer Part Style
     .project:hover{
         transform: scale(85%) translate(2%, 20px);
     }
+    /* Sopnsor part  */
     #sponsor-part {
         padding-top: 30px;
         padding-bottom: 35px;
@@ -571,6 +580,227 @@ Footer Part Style
         font-size: 16px;
     }
   
+}
+
+/*---------------------------
+ Responsive for medium device 
+ ----------------------------- */
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .container{
+        width: 100%;
+    }
+    .feat-title, .feat-blog-title, .fact-title, .sponsor-title, .projects-title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 45px; 
+    }
+    /* Header Part  */
+    #header{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo-name {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--secondary-color);
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    
+   
+    #toggle-bar{
+        display: block;
+        text-align: right;
+        margin-right: 15px;
+    }
+    #toggle-bar i{
+        color: var(--primary-color);
+        font-size: 30px;
+    }
+    .nav-items {
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        width: 100%;
+        top: 57px;
+        left: 0%;
+        transform: translate(100%, 0%);
+        transition: .5s ;
+        background-color: #504d4c;
+        height: 250px;
+    }
+    .nav-link{
+       color: rgb(145, 128, 128);
+       transition: color .5s ease-in-out;
+    }
+    .nav-link:hover{
+        color: #FF900E;
+    }
+    .nav-items-overly{
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    input:checked ~ header .nav-items{
+        transform: translateY(0);
+    }
+    
+    /* Home Part  */
+    
+    .head-line {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        color: var(--secondary-color);
+    }
+    
+    .break-no{
+        display: none;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    /* Feature Part  */
+    #feature-part {
+        padding-top: 30px;
+
+    }
+    .feat-text{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .feat-title{
+        padding-right: 0;
+        padding-top: 20px;
+    }
+    .feature-body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        column-gap: 73px;
+        margin-left: 0px;
+    }
+   
+    .feat-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        place-items: center;
+
+    }
+    .feat-img img{
+        width: 95%;
+    }
+   
+    /* Feature BLog  */
+    #feature-blog {
+        padding-top: 0px;
+    }
+    .feat-blog-body {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+    }
+    .feat-blog-title {
+        padding-right: 0px;
+    }
+    .feat-blog-description {
+        padding-bottom: 20px;
+        padding-right: 0px;
+    }
+    .blogs{
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+    }
+    .blog{
+        padding: 30px 20px 30px 20px;
+    }
+    .blog-description{
+        width: 100%;
+        height: 94px;
+    }
+    .feat-blog-img{
+        text-align: center;
+    }
+    .feat-blog-img img{
+        width: 95%;
+    }
+    .big-btn {
+    
+        width: 276px;
+        height: 165px;
+        bottom: -10%;
+        left: 7%;
+    }
+    .big-btn a {
+        font-size: 40px;
+    }
+    .big-btn a .span{
+        font-size: 20px;
+    }
+
+    /* Fact Part  */
+    #fact-part {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .fact-text {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .fact-box {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 40px;
+         margin-left: 20px;
+    }
+    /* Projecet Part  */
+    #project-part {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        padding-top: 30px;
+        gap: 30px;
+        place-items: center;
+    }
+    .project{
+        width: 70%;
+    }
+    .project:hover{
+        transform: scale(85%) translate(2%, 20px);
+    }
+    /* Sopnsor part  */
+    #sponsor-part {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+    .sponsor-logo {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 20px;
+        margin-left: 20px;
+    }
+    /* Footer part  */
+    .footer-text {
+        font-size: 16px;
+    }
 }
 
 
