@@ -470,6 +470,9 @@ Footer Part Style
         padding-top: 30px;
         gap: 30px;
     }
+    .project:hover{
+        transform: scale(85%) translate(2%, 20px);
+    }
     #sponsor-part {
         padding-top: 30px;
         padding-bottom: 35px;
